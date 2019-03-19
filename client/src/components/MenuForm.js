@@ -19,7 +19,7 @@ export default class MenuForm extends React.Component {
             this.props.editMenu({ id: this.props.id, ...this.state })
             this.props.toggleEdit()
         } else {
-            this.props.addMenu(this.state)
+            this.props.addMenu(this.state.name)
         }
         this.setState({ name: '' })
     }
